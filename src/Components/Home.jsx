@@ -5,18 +5,28 @@ import { AiOutlineRight } from "react-icons/ai";
 import { MdCastForEducation } from "react-icons/md";
 import { BsDisplayFill } from "react-icons/bs";
 import { BiTimer } from "react-icons/bi";
+
+import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
 const Home = (props) => {
+  const nav=useNavigate()
   return (
-    <div>
+    <div className="">
       <section
         id="video-section"
-        className="flex flex-col items-center bg-neutral-700 w-full h-[85vh] justify-center text-white"
+        className="flex flex-col items-center w-full h-[85vh] justify-center text-white"
       >
-        <p className="md:w-[45vw] w-[80vw] md:text-3xl text-xl font1 flex flex-col py-2">
+        <img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+          className="w-full h-[85vh] object-cover -z-50 absolute"
+          alt=""
+        />
+        <div className="w-full h-[85vh] absolute bg-black opacity-70 -z-40"></div>
+        <p className="md:w-[45vw] max-w-[450px] w-[80vw] md:text-3xl text-xl font1 flex flex-col py-2">
           <span>LET'S BRING PROPERTY SALES </span>
           <span>TO THE NEXT LEVEL</span>
         </p>
-        <p className="md:w-[45vw] w-[80vw] md:text-md text-sm font1">
+        <p className="md:w-[50vw] max-w-[450px] w-[80vw] md:text-md text-lg py-5 font1">
           Interactive 3D Sales and Marketing Soln for property development of
           future
         </p>
@@ -27,7 +37,10 @@ const Home = (props) => {
           Watch Video
         </button>
       </section>
-      <section id="our-solution-section" className="w-[80vw] mx-auto mt-10 pt-2">
+      <section
+        id="our-solution-section"
+        className="w-[80vw] mx-auto mt-10 pt-2"
+      >
         <div className="text-2xl my-5 font-semibold">OUR SOLUTION</div>
         <div className="flex flex-col md:flex-row items-center justify-around">
           <section className=" md:w-[50%] items-center">
@@ -59,7 +72,7 @@ const Home = (props) => {
         <div className="flex flex-col w-[75vw] m-auto justify-center items-center">
           <p className="text-2xl font-semibold my-3">WHATS IN IT FOR YOU?</p>
           <div className="flex flex-col md:flex-row">
-            <p className="flex flex-col md:w-[25vw] p-10 items-center">
+            <section className="flex flex-col md:w-[25vw] p-10 items-center">
               <div className="scale-[250%] p-4 my-5 mb-12 rounded-[50%] text-white border-[1.5px] bg-[#53bcb3] bg-gradient-to-b from-[#a5e5e0] to-[#088b7e]">
                 <MdCastForEducation />
               </div>
@@ -69,8 +82,8 @@ const Home = (props) => {
               <span className="text-xl ">
                 Instill confidence into your customers.
               </span>
-            </p>
-            <p className="flex flex-col md:w-[25vw] p-10 items-center">
+            </section>
+            <section className="flex flex-col md:w-[25vw] p-10 items-center">
               <div className="scale-[250%] p-4 my-5 mb-12 rounded-[50%] text-white border-[1.5px] bg-[#53bcb3] bg-gradient-to-b from-[#a5e5e0] to-[#088b7e]">
                 <BsDisplayFill />
               </div>
@@ -80,8 +93,8 @@ const Home = (props) => {
               <span className="text-xl ">
                 Create consistency across all platforms.
               </span>
-            </p>
-            <p className="flex flex-col md:w-[25vw] p-10 items-center">
+            </section>
+            <section className="flex flex-col md:w-[25vw] p-10 items-center">
               <div className="scale-[250%] p-4 my-5 mb-12 rounded-[50%] text-white border-[1.5px] bg-[#53bcb3] bg-gradient-to-b from-[#a5e5e0] to-[#088b7e]">
                 <BiTimer />
               </div>
@@ -91,13 +104,13 @@ const Home = (props) => {
               <span className="text-xl ">
                 Reduce the amount of time spent per client.
               </span>
-            </p>
+            </section>
           </div>
         </div>
       </section>
       <section
         id="get-in-touch"
-        className="w-full bg-slate-900 text-white py-[80px] relative"
+        className="w-full  text-white py-[70px] relative items-center flex bg-gradient-to-r from-[#53bcb3] to-[#055792]" 
       >
         <div className="flex w-[75vw] m-auto items-center justify-center flex-col md:flex-row ">
           <div className="md:w-[40vw] md:mr-10 flex justify-start flex-col md:items-start items-center md:text-start">
@@ -107,17 +120,17 @@ const Home = (props) => {
               customers.
             </p>
           </div>
-          <button className="md:ml-10 px-6 py-2 my-4 rounded-md bg-[#53bcb3] ">
+          <button
+          onClick={() => {
+            nav("contactform");
+            }}
+            className="md:ml-10 px-6 py-2 my-4 rounded-md bg-[#53bcb3] ">
             CONTACT US
           </button>
         </div>
       </section>
-      <footer className="w-[80vw] m-auto flex items-start justify-evenly py-10">
-        <div className="">Logo</div>
-        <div className="flex flex-col items-start"><span className="font-semibold text-xl">Find Us</span><span>Shakti StatesMen </span><span> Bellandur </span><span>Bangalore ,560103</span></div>
-        <div className="flex flex-col items-start"><span className="font-semibold text-xl">Contact Us</span><span>sanketh.sura.2@gmail.com</span><span>+91 9686274029</span></div>
-        <div className=""><span>Follow Us</span><span></span></div>
-      </footer>
+        <Footer />
+      
     </div>
   );
 };
