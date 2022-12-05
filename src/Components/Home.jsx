@@ -1,6 +1,6 @@
 import React from "react";
 import "./Component.css";
-import { BsFillPlayFill } from "react-icons/bs";
+
 import { AiOutlineRight } from "react-icons/ai";
 import { MdCastForEducation } from "react-icons/md";
 import { BsDisplayFill } from "react-icons/bs";
@@ -9,7 +9,7 @@ import { BiTimer } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 const Home = (props) => {
-  const nav=useNavigate()
+  const nav = useNavigate();
   return (
     <div className="">
       <section
@@ -27,36 +27,55 @@ const Home = (props) => {
           <span>TO THE NEXT LEVEL</span>
         </p>
         <p className="md:w-[50vw] max-w-[450px] w-[80vw] md:text-md text-lg py-5 font1">
-          Interactive 3D Sales and Marketing Soln for property development of
+          Interactive 3D Sales and Marketing Solution for property developers of the
           future
         </p>
-        <button className="px-8 bg-[#53bcb3] py-2 rounded-md mt-4 flex text-white items-center">
-          <span className="pr-2 scale-125">
-            <BsFillPlayFill />
-          </span>
-          Watch Video
-        </button>
+      
       </section>
       <section
         id="our-solution-section"
         className="w-[80vw] mx-auto mt-10 pt-2"
       >
-        <div className="text-2xl my-5 font-semibold">OUR SOLUTION</div>
-        <div className="flex flex-col md:flex-row items-center justify-around">
+        <div className="text-2xl my-5 font-semibold">OUR SOLUTIONS</div>
+        <div className="flex flex-col md:flex-row-reverse items-center justify-between bg-slate-500 p-2 rounded-xl">
+          <section className="  items-center md:px-6">
+            <img src="https://images.adsttc.com/media/images/626b/0211/2dc2/4e01/68ad/1926/newsletter/archdaily-twinmotion-202-cloud-1920x1080-1.jpg?1651180059"
+              className="md:w-[33vw] w-[80vw] md:h-[25vw] h-[50vw] object-cover bg-slate-300 my-5    transition ease-in-out delay-150  hover:scale-105 duration-300 hover:cursor-pointer  "
+              alt=""
+            />
+          </section>
+          <section className="flex flex-col md:w-[60%] md:items-start items-center md:p-12">
+            <span className="text-3xl py-2">Property Sales Engine</span>
+            <span className="text-xl text-start py-2">
+              An all-in-one sales and marketing solution ,
+             combining  gamefied 3D  experiance for your  clients  at comfort of home and  data collection for imporoving targetted sales 
+            </span>
+            <button  onClick={() => {
+          nav("sales");
+          }} className="px-8 bg-[#53bcb3] py-2 rounded-md mt-4 text-white items-center flex justify-center     transition ease-in-out delay-150  hover:scale-110 duration-300 hover:cursor-pointer">
+              <p >Learn More</p>
+              <div className="pt-1 pl-2">
+                <AiOutlineRight />
+              </div>
+            </button>
+          </section>
+        </div> 
+        <div className="flex flex-col md:flex-row items-center justify-between bg-slate-500 mt-4  p-2 rounded-xl">
           <section className=" md:w-[50%] items-center">
             <img
-              className="md:w-[25vw] w-[50vw] md:h-[25vw] h-[50vw] object-cover bg-slate-300 my-5"
+            src="https://cdn-learning.artstation.com/p/courses/covers/000/000/138/large/cover-1589529782.jpg?1589529782"
+              className="md:w-[33vw] w-[80vw] md:h-[25vw] h-[50vw] object-cover bg-slate-300 my-5 md:ml-6   transition ease-in-out delay-150  hover:scale-105 duration-300 hover:cursor-pointer  "
               alt=""
             />
           </section>
           <section className="flex flex-col md:w-[50%] md:items-start items-center">
-            <span className="text-3xl py-2">Property Sales Engine</span>
+            <span className="text-3xl py-2">Property design Engine</span>
             <span className="text-xl text-start py-2">
-              An all-in-one sales and marketing solution combining an
-              interactive 3D presentation and search engine to market new build
-              properties at the pre-completion stage.
+           all in one design engine with real time material and furnishing updates in front of your clients so that , reducing customer dropouts and design times 
             </span>
-            <button className="px-8 bg-[#53bcb3] py-2 rounded-md mt-4 text-white items-center flex justify-center">
+            <button  onClick={() => {
+          nav("DESIGNING");
+          }} className="px-8 bg-[#53bcb3] py-2 rounded-md mt-4 text-white items-center flex justify-center  transition ease-in-out delay-150  hover:scale-105 duration-300 hover:cursor-pointer ">
               <p>Learn More</p>
               <div className="pt-1 pl-2">
                 <AiOutlineRight />
@@ -64,7 +83,14 @@ const Home = (props) => {
             </button>
           </section>
         </div>
+       
       </section>
+
+      
+     
+
+
+      
       <section
         id="whats-in-for-you"
         className="w-full bg-slate-50 py-12 mt-[75px]"
@@ -108,9 +134,10 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+      
       <section
         id="get-in-touch"
-        className="w-full  text-white py-[70px] relative items-center flex bg-gradient-to-r from-[#53bcb3] to-[#055792]" 
+        className="w-full  text-white py-[70px] relative items-center flex bg-gradient-to-r from-[#53bcb3] to-[#055792]"
       >
         <div className="flex w-[75vw] m-auto items-center justify-center flex-col md:flex-row ">
           <div className="md:w-[40vw] md:mr-10 flex justify-start flex-col md:items-start items-center md:text-start">
@@ -121,16 +148,16 @@ const Home = (props) => {
             </p>
           </div>
           <button
-          onClick={() => {
-            nav("contactform");
+            onClick={() => {
+              nav("contactform");
             }}
-            className="md:ml-10 px-6 py-2 my-4 rounded-md bg-[#53bcb3] ">
+            className="md:ml-10 px-6 py-2 my-4 rounded-md bg-[#53bcb3] "
+          >
             CONTACT US
           </button>
         </div>
       </section>
-        <Footer />
-      
+      <Footer />
     </div>
   );
 };
