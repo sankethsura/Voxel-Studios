@@ -3,8 +3,9 @@ import {  Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import AboutUs from "./Components/AboutUs";
-import CaseStudies from "./Components/CaseStudies";
+import Windows from "./Components/Windows";
 import ContactForm from "./Components/ContactForm";
+import Android from "./Components/android";
 function App() {
   return (
     <div className="App">
@@ -12,9 +13,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/casestudies" element={<CaseStudies />} />
+        <Route path="/DESIGNING" element={<Windows />} />
         <Route path="/contactform" element={<ContactForm />} />
-//  this is a comment
+
+        <Route path="/sales" element={<Android />} />
+
         </Routes>
     </div>
   );

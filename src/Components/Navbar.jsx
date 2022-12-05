@@ -15,7 +15,7 @@ const Navbar = (props) => {
         }}
         className="px-4 py-2 cursor-pointer"
       >
-        Logo
+        <img className="w-[50px]  h-[50px]" src="https://firebasestorage.googleapis.com/v0/b/airbnb-auth-599df.appspot.com/o/voxel%2Ficon.png?alt=media&token=678b6aaf-542e-4904-bf7d-9c68e5a84541" alt="" />
       </section>
       <section className="flex">
         <div
@@ -28,19 +28,19 @@ const Navbar = (props) => {
         </div>
         <div
         onClick={() => {
-          nav("casestudies");
+          nav("DESIGNING");
           }}
           className="px-4 py-2 hidden md:flex cursor-pointer">
-          Case Studies
+          DESIGNING
         </div>
 
         <div
           onClick={() => {
-            nav("aboutus");
+            nav("sales");
           }}
-          className="px-4 py-2 hidden md:flex cursor-pointer"
+          className="px-4 py-2 hidden md:flex cursor-pointer mr-3"
         >
-          About Us
+          SALES
         </div>
 
         <div
