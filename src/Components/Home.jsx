@@ -37,10 +37,10 @@ const Home = (props) => {
         className="w-[80vw] mx-auto mt-10 pt-2"
       >
         <div className="text-2xl my-5 font-semibold">OUR SOLUTIONS</div>
-        <div className="flex flex-col md:flex-row-reverse items-center justify-between bg-slate-500 p-2 rounded-xl">
+        <div className="flex flex-col md:flex-row-reverse items-center justify-between bg-slate-50 shadow-lg p-2 rounded-xl">
           <section className="  items-center md:px-6">
             <img src="https://images.adsttc.com/media/images/626b/0211/2dc2/4e01/68ad/1926/newsletter/archdaily-twinmotion-202-cloud-1920x1080-1.jpg?1651180059"
-              className="md:w-[33vw] w-[80vw] md:h-[25vw] h-[50vw] object-cover bg-slate-300 my-5    transition ease-in-out delay-150  hover:scale-105 duration-300 hover:cursor-pointer  "
+              className="md:w-[33vw] rounded-xl w-[80vw] md:h-[25vw] h-[50vw] object-cover bg-slate-300 my-5 "
               alt=""
             />
           </section>
@@ -60,18 +60,18 @@ const Home = (props) => {
             </button>
           </section>
         </div> 
-        <div className="flex flex-col md:flex-row items-center justify-between bg-slate-500 mt-4  p-2 rounded-xl">
+        <div className="flex flex-col md:flex-row items-center justify-between bg-slate-50 shadow-lg mt-4  p-2 rounded-xl">
           <section className=" md:w-[50%] items-center">
             <img
             src="https://cdn-learning.artstation.com/p/courses/covers/000/000/138/large/cover-1589529782.jpg?1589529782"
-              className="md:w-[33vw] w-[80vw] md:h-[25vw] h-[50vw] object-cover bg-slate-300 my-5 md:ml-6   transition ease-in-out delay-150  hover:scale-105 duration-300 hover:cursor-pointer  "
+              className="md:w-[33vw] rounded-xl w-[80vw] md:h-[25vw] h-[50vw] object-cover bg-slate-300 my-5 md:ml-6 "
               alt=""
             />
           </section>
           <section className="flex flex-col md:w-[50%] md:items-start items-center">
             <span className="text-3xl py-2">Property design Engine</span>
             <span className="text-xl text-start py-2">
-           all in one design engine with real time material and furnishing updates in front of your clients so that , reducing customer dropouts and design times 
+           All in one design engine with real time material and furnishing updates in front of your clients so that , reducing customer dropouts and design times 
             </span>
             <button  onClick={() => {
           nav("DESIGNING");
