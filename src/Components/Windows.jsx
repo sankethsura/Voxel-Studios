@@ -22,23 +22,35 @@ const Windows = (props) => {
       <div className="text-md py-5 text-center font-bold w-[75vw] m-auto my-4">
         {" "}
         An average INTERIOR DESIGN company spends 1-2 months and 10-15 meetings
-        in designing and finalize an normal 2-3 BHK residential project.
-        This is expensive, time consuming and has higher chance of customer
-        dropout during this time{" "}
+        in designing and finalize an normal 2-3 BHK residential project. This is
+        expensive, time consuming and has higher chance of customer dropout
+        during this time{" "}
       </div>
       <section className="items-start flex flex-col w-[75vw] m-auto">
         <div className="font-bold text-xl pb-3">
           Presenting Design Engine by Voxel{" "}
         </div>
         <div className="flex items-center">
-        <IoRadioButtonOnOutline /> <span className="px-5">Its an customized windows app which lets you navigate the
-          wholeinterior sapce like a game</span>
+           <span><IoRadioButtonOnOutline /></span>{" "}
+          <span className="px-5">
+            Its an customized windows app which lets you navigate the
+            wholeinterior sapce like a game
+          </span>
         </div>
         <div className="flex items-center">
-        <IoRadioButtonOnOutline /> <span className="px-5">Lets you customize design, finishes and furnishing in real time
-          norendering required</span>
+           <span><IoRadioButtonOnOutline /></span>{" "}
+          <span className="px-5">
+            Lets you customize design, finishes and furnishing in real time
+            norendering required
+          </span>
         </div>
-        <div className="flex items-center">  <IoRadioButtonOnOutline /> <span className="px-5">Lets your customer experance the place like never before</span></div>
+        <div className="flex items-center">
+          {" "}
+           <span><IoRadioButtonOnOutline /></span>{" "}
+          <span className="px-5">
+            Lets your customer experance the place like never before
+          </span>
+        </div>
       </section>
       <div>
         <section className="flex item-start text-start pt-8 flex-col w-[75vw] m-auto">
@@ -46,21 +58,42 @@ const Windows = (props) => {
           <div className="font-bold text-xl pb-3 "> Adventages</div>
           <ul className="flex justify-start text-start w-[75vw] m-auto flex-col pb-10">
             <li className=" flex items-center">
-              <IoRadioButtonOnOutline /> <span className="px-5">Reduces design times from 1-2 months to
-              1-2 weeks{" "}</span>
+              <span>
+                <IoRadioButtonOnOutline />
+              </span>{" "}
+              <span className="px-5">
+                Reduces design times from 1-2 months to 1-2 weeks{" "}
+              </span>
             </li>
             <li className=" flex items-center">
-              <IoRadioButtonOnOutline /> <span className="px-5">Your designer can handel more clients{" "}</span>
+              <span>
+                <IoRadioButtonOnOutline />
+              </span>{" "}
+              <span className="px-5">
+                Your designer can handel more clients{" "}
+              </span>
             </li>
             <li className=" flex items-center">
-              <IoRadioButtonOnOutline /> <span className="px-5">Improved customer satisfaction{" "}</span>
+              <span>
+                <IoRadioButtonOnOutline />
+              </span>{" "}
+              <span className="px-5">Improved customer satisfaction </span>
             </li>
             <li className=" flex items-center">
-              <IoRadioButtonOnOutline /> <span className="px-5">Lesser customer dropout during design
-              process{" "}</span>
+              <span>
+                <IoRadioButtonOnOutline />
+              </span>{" "}
+              <span className="px-5">
+                Lesser customer dropout during design process{" "}
+              </span>
             </li>
             <li className=" flex items-center">
-              <IoRadioButtonOnOutline /> <span className="px-5">Your comapny perception value increases{" "}</span>
+              <span>
+                <IoRadioButtonOnOutline />
+              </span>{" "}
+              <span className="px-5">
+                Your comapny perception value increases{" "}
+              </span>
             </li>
           </ul>
         </section>

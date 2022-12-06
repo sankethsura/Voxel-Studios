@@ -28,14 +28,14 @@ const Android = (props) => {
       </div>
       <section className="items-start flex flex-col w-[75vw] m-auto">
         <div className="font-bold text-xl pb-3">Presenting property sales engine by Voxel </div>
-        <div className="flex items-center"> <IoRadioButtonOnOutline /> <span className="px-5">
+        <div className="flex items-center text-start"> <span><IoRadioButtonOnOutline /></span> <span className="px-5">
           Its an customized mobile app which lets your client navigate the whole
           interior sapce and all other amenities near it{" "}</span>
         </div>
-        <div className="flex items-center">  <IoRadioButtonOnOutline /> <span className="px-5">Lets your customer experance the place like never before</span></div>
-        <div className="flex items-center"> <IoRadioButtonOnOutline /> <span className="px-5"> Lets you collect data about your customer </span></div>
-        <div className="flex items-center">
-          {" "} <IoRadioButtonOnOutline /> <span className="px-5">
+        <div className="flex items-center text-start">  <span><IoRadioButtonOnOutline /></span> <span className="px-5">Lets your customer experance the place like never before</span></div>
+        <div className="flex items-center"> <span><IoRadioButtonOnOutline /></span> <span className="px-5"> Lets you collect data about your customer </span></div>
+        <div className="flex items-center text-start">
+          {" "} <span><IoRadioButtonOnOutline /></span> <span className="px-5">
           Let you give complete information about the project to your customers{" "}</span>
         </div>
       </section>
@@ -44,11 +44,11 @@ const Android = (props) => {
           {" "}
           <div className="font-bold text-xl pb-3 "> Adventages</div>
           <ul className="flex justify-start text-start w-[75vw] m-auto flex-col pb-10">
-            <li className=" flex items-center">  <IoRadioButtonOnOutline /> <span className="px-5">Reduces sales times from 1-2 months to 1-2 weeks</span> </li>
-            <li className=" flex items-center">  <IoRadioButtonOnOutline /> <span className="px-5">Your sales person can handel more clients</span> </li>
-            <li className=" flex items-center">  <IoRadioButtonOnOutline /> <span className="px-5">Improved customer satisfaction </span></li>
-            <li className=" flex items-center">  <IoRadioButtonOnOutline /> <span className="px-5">Lesser customer dropout during sales process </span></li>
-            <li className=" flex items-center">  <IoRadioButtonOnOutline /> <span className="px-5">Your comapny perception value increases </span></li>
+            <li className=" flex items-center">  <span><IoRadioButtonOnOutline /></span> <span className="px-5">Reduces sales times from 1-2 months to 1-2 weeks</span> </li>
+            <li className=" flex items-center">  <span><IoRadioButtonOnOutline /></span> <span className="px-5">Your sales person can handel more clients</span> </li>
+            <li className=" flex items-center">  <span><IoRadioButtonOnOutline /></span> <span className="px-5">Improved customer satisfaction </span></li>
+            <li className=" flex items-center">  <span><IoRadioButtonOnOutline /></span> <span className="px-5">Lesser customer dropout during sales process </span></li>
+            <li className=" flex items-center">  <span><IoRadioButtonOnOutline /></span> <span className="px-5">Your comapny perception value increases </span></li>
           </ul>
         </div>
       </div>
